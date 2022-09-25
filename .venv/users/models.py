@@ -14,16 +14,4 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    #Code taken from - [14] (see references)
-    def save(self, *args, **kwargs):
-        super(Profile, self).save(*args, **kwargs)
-
-        #Opening image, default if none is selected
-        img = Image.open(self.image.path)
-
-        #Resizing image
-        if img.height > 300 or img.width > 300:
-            output_size = (300, 300)
-            img.thumbnail(output_size)
-            img.save(self.image.path)
 

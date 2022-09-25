@@ -91,3 +91,7 @@ https://www.w3schools.com/html/html_comments.asp
 W3Schools (2022) [online] CSS Comments, Available from:
 https://www.w3schools.com/css/css_comments.asp
 [Accessed 24/09/2022] [23]
+
+Django (2017) [online] Django-Storages Available from:
+https://django-storages.readthedocs.io/en/latest/
+[Accessed 25/09/2022] [24]
