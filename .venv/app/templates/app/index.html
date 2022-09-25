@@ -1,0 +1,83 @@
+<!-- Template for the Index page, extended from base.html template -->
+{% extends 'app/base.html' %}
+{% block content %}
+<!-- Checking if user is authenticated, if so they can see the content, if not then they are prompted to login -->
+    {% if user.is_authenticated %}
+        <h1>All Posts</h1>
+        <!-- Filter section on category or author -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCatMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Category 
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownCatMenuButton">
+                {% for cat in categories %}
+                    <a class="dropdown-item" href="{% url 'category-posts' cat.category %}">{{ cat.category }}</a>
+                {% endfor %}
+                <a class="dropdown-item" href="{% url 'app-index' %}">No filter</a>
+            </div> 
+
+            <div class="dropdown" style="float: left; padding-right: 20px;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownAuthMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Author  
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownAuthMenuButton">
+                    {% for author in authors %}
+                        <a class="dropdown-item" href="{% url 'user-posts' author.username %}">{{ author.username }}</a>
+                    {% endfor %}
+                    <a class="dropdown-item" href="{% url 'app-index' %}">No filter</a>
+                </div> 
+            </div>
+        </div>
+    
+        <!-- Shows all the post from lastest posted (5 per page)-->
+        <!-- code taken from turotial - [11] (see references) -->
+        <br/>        
+        {% for post in posts %}
+            <article class="media content-section">
+                <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>                        
+                        <small class="text-muted">{{ post.date_posted|date:"d F, Y" }}</small>
+                    </div>
+                    <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+                    <a class="mr-2" href="{% url 'category-posts' post.category %}">{{ post.category }}</a> 
+                    <p class="article-content">{{ post.content }}</p>
+                </div>
+            </article>
+        {% endfor %}
+
+        <!-- Pagination section -->
+        {% if is_paginated %}
+
+            {% if page_obj.has_previous %}
+                <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+                <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                    <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+                <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+            {% endif %}
+
+
+        {% endif %}
+    <!-- Prompting user to login first to see content -->
+    {% else %}
+        <h2>Please log in to view content</h2>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                <a href="{% url 'login' %}">Login Here</a>
+            </small>
+        </div>
+    {% endif %}
+    
+{% endblock content %}

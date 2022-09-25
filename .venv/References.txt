@@ -1,0 +1,93 @@
+References
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 1 - Getting Started, Available from:
+https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=1
+[Accessed 16/09/2022] [1]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 2 - Applications and Routes, Available from:
+https://www.youtube.com/watch?v=a48xeeo5Vnk&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=2
+[Accessed 16/09/2022] [2]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 3 - Templates, Available from:
+https://www.youtube.com/watch?v=qDwdMDQ8oX4&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=3
+[Accessed 17/09/2022] [3]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 4 - Admin Page, Available from:
+https://www.youtube.com/watch?v=1PkNiYlkkjo&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=4
+[Accessed 17/09/2022] [4]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 5 - Database and Migrations, Available from:
+https://www.youtube.com/watch?v=aHC3uTkT9r8&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=5
+[Accessed 18/09/2022] [5]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 6 - User Registration, Available from:
+https://www.youtube.com/watch?v=q4jPR-M0TAQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=6
+[Accessed 18/09/2022] [6]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 7 - Login and Logout System, Available from:
+https://www.youtube.com/watch?v=3aVqWaLjqS4&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=7
+[Accessed 18/09/2022] [7]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 8 - User Profile and Picture, Available from:
+https://www.youtube.com/watch?v=FdVuKt_iuSI&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=8
+[Accessed 19/09/2022] [8]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 9 - Update User Profile, Available from:
+https://www.youtube.com/watch?v=CQ90L5jfldw&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=9
+[Accessed 19/09/2022] [9]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 10 - Create, Update, and Delete Posts, Available from:
+https://www.youtube.com/watch?v=-s7e_Fy6NRU&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=10
+[Accessed 19/09/2022] [10]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 11 - Pagination, Available from:
+https://www.youtube.com/watch?v=acOktTcTVEQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=11
+[Accessed 20/09/2022] [11]
+
+YouTube (2018) [online / video] Python Django Tutorial: Full-Featured Web App Part 12 - Email and Password Reset, Available from:
+https://www.youtube.com/watch?v=-tyBEsHSv7w&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=12
+[Accessed 20/09/2022] [12]
+
+YouTube (2018) [online / video] Python Quick Tip: Hiding Passwords and Secret Keys in Environment Variables (Windows), Available from:
+https://www.youtube.com/watch?v=IolxqkL7cD8&t=187s
+[Accessed 20/09/2022] [13]
+
+Stack Overflow (2018) [online] Django - TypeError - save() got an unexpected keyword argument 'force_insert', Available from:
+https://stackoverflow.com/questions/52351756/django-typeerror-save-got-an-unexpected-keyword-argument-force-insert
+[Accessed 20/09/2022] [14]
+
+Real Python (2022) [online] What You Need to Know to Manage Users in Django Admin, Available from:
+https://realpython.com/manage-users-in-django-admin/
+[Accessed 20/09/2022] [15]
+
+Lipsum (2022) [online] Lorem Ipsum, Available from:
+https://www.lipsum.com/
+[Accessed 21/09/2022] [16]
+
+Get Bootstrap (2022) [online] Dropdowns, Available from:
+https://getbootstrap.com/docs/4.2/components/dropdowns/
+[Accessed 21/09/2022] [17]
+
+Stack Overflow (2015) [online] Multiple models generic ListView to template, Available from:
+https://stackoverflow.com/questions/31133963/multiple-models-generic-listview-to-template
+[Accessed 21/09/2022] [18]
+
+Stack Overflow (2010) [online] Django models | get specific columns, Available from:
+https://stackoverflow.com/questions/2668567/django-models-get-specific-columns
+[Accessed 21/09/2022] [19]
+
+Django (2022) [online] Making Queries, Available from:
+https://docs.djangoproject.com/en/4.1/topics/db/queries/
+[Accessed 22/09/2022] [20]
+
+W3Schools (2022) [online] CSS Tables, Available from:
+https://www.w3schools.com/css/css_table.asp
+[Accessed 22/09/2022] [21]
+
+W3Schools (2022) [online] HTML Comments, Available from:
+https://www.w3schools.com/html/html_comments.asp
+[Accessed 24/09/2022] [22]
+
+W3Schools (2022) [online] CSS Comments, Available from:
+https://www.w3schools.com/css/css_comments.asp
+[Accessed 24/09/2022] [23]

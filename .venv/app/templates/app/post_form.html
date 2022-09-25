@@ -1,0 +1,23 @@
+<!-- Template for the Post form page, extended from base.html template -->
+{% extends "app/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            <!-- using the csrf tokem to return if the suer is authenticated / user status e.g. normal or super user -->
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- Form to create new post -->
+                <legend class="border-bottom mb-4">New Post</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <!-- Submit button or hyperlink to cancel action -->
+                <button class="btn btn-outline-info" type="submit">Post</button>
+                <small class="text-muted">
+                    <a class="btn btn-outline-secondary" href="{% url 'app-index' %}">Cancel</a>
+                </small>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
